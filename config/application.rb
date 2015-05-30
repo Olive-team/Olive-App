@@ -33,7 +33,7 @@ module Olive
     # config.i18n.default_locale = :de
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
-    config.active_record.raise_in_transactional_callbacks = true
+    # config.active_record.raise_in_transactional_callbacks = true
 
     # User Bower packages in assets pipeline
     config.assets.paths << Rails.root.join("vendor","assets","bower_components")
@@ -41,6 +41,9 @@ module Olive
     config.assets.precompile << %r(.*.(?:eot|svg|ttf|woff)$)
 
     # Angular templates
-    config.angular_templates.markups = %w(slim)
+    config.angular_templates.markups        = %w(slim)
+
+    config.assets.precompile += ['*.slim', '*/*.slim']
+
   end
 end
