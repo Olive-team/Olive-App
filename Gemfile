@@ -15,11 +15,12 @@ group :development, :test do
   gem 'spring'
 end
 
+gem 'sprockets', '2.12.3'
 gem 'bootstrap-sass'
-# gem 'high_voltage'
+gem 'high_voltage'
 gem 'simple_form'
 gem 'slim'
-gem 'angular-rails-templates', '0.1.3'
+gem 'angular-rails-templates', '0.1.5'
 gem 'bower-rails'
 gem 'pagylight',   github: 'yasinishyn/pagylight'
 gem 'active_model_serializers'

@@ -1,3 +1,4 @@
+//= require google_analytics
 //= require angular/angular
 //= require angular-route/angular-route
 //= require angular-resource/angular-resource

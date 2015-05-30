@@ -1,7 +1,6 @@
 module Api
   module V1
     class AddsController < ApplicationController
-      # respond_to :json
       def index
         adds = Add.all.pagylight(params[:page], 20)
 

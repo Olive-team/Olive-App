@@ -41,7 +41,7 @@ module Olive
     config.assets.precompile << %r(.*.(?:eot|svg|ttf|woff)$)
 
     # Angular templates
-    config.angular_templates.markups        = %w(slim)
+    config.angular_templates.markups.push 'slim'
 
     config.assets.precompile += ['*.slim', '*/*.slim']
 

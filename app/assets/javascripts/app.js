@@ -2,8 +2,8 @@ angular.module('AddsApp',        []);
 angular.module('StaticPagesApp', []);
 
 angular.module('Olive', [
-  'ngRoute',
   'templates',
+  'ngRoute',
   'ngResource',
   'AddsApp',
   'StaticPagesApp'
